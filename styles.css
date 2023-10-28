@@ -24,7 +24,7 @@ body {
     font-family: var(--font-family-primary);
     background-color: var(--barva-seda);
     max-width: 960px;
-    margin: 200px auto;
+    margin: 150px auto;
     display: flex;
     justify-content: center;
     

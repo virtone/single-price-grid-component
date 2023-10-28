@@ -1,0 +1,184 @@
+:root {
+    --barva-cyan: hsl(179, 62%, 43%);
+    --barva-zelena: hsl(71, 73%, 54%);
+    --barva-seda: hsl(204, 43%, 93%);
+    --barva-svetle-modra: hsl(218, 22%, 67%);
+
+    --font-family-primary: 'Karla', sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-heavy: 700;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--font-family-primary);
+    background-color: var(--barva-seda);
+    max-width: 960px;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    max-width: 650px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: var(--font-family-primary);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-heavy);
+    margin-bottom: 0.4rem;
+    color: var(--barva-cyan);
+
+}
+
+.community {
+    grid-column: 1 / 3;
+    display: grid;
+    gap: 1rem;
+
+}
+
+.children {
+    padding: 43px 40px;
+}
+
+.sub {
+    background-color: var(--barva-cyan);
+}
+
+.Why {
+    background-color: var(--barva-cyan);
+    opacity: 0.7;
+}
+
+.day {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-heavy);
+    color: var(--barva-zelena);
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-heavy);
+}
+
+.text {
+    color: var(--barva-svetle-modra);
+    line-height: 1.5rem;
+}
+
+
+.bila {
+    color: white;
+}
+
+.Why p {
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.nadpisy {
+    margin-bottom: 1.2rem;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.cena {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 0.8rem;
+}
+
+.month {
+    opacity: 0.7;
+}
+
+button {
+    width: 100%;
+    margin-top: 2rem;
+    font-family: var(--font-family-primary);
+    font-size: 0.97rem;
+    background-color: var(--barva-zelena);
+    border: 0px;
+    padding: 15px;
+    border-radius: 7px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 4px 6px 20px 0px hsl(179, 61%, 33%);
+    cursor: pointer;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 697px) {
+    .sub {
+        grid-column: 1 / 3;
+    }
+
+    .Why {
+        grid-column: 1 / 3;
+    }
+
+    .grid {
+        margin: 0px 15px;
+    }
+
+
+  }
+
+  @media (max-width: 460px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .children {
+        padding: 26px 24px;
+    }
+
+    .day {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 0.95rem;
+    }
+
+    .community {
+        display: grid;
+        gap: 1.1rem;
+    }
+
+    body {
+        margin: 50px auto;
+        
+    }
+
+
+  }
